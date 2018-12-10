@@ -10,7 +10,7 @@ body {
   margin: auto;
   border-bottom: 5px solid #d9d9d9;
   padding-bottom: 75px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #303044;
 }
@@ -266,12 +266,18 @@ button {
 }
 
 .nav-main__item {
-  display: inline-block;
+  margin: 15px 0 10px 0;
+}
+
+/* COMPONENT 4 : Center items in menu header */
+.nav-main__list {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-main__link {
-  display: block;
-  padding: 10px;
+  display: inline;
+  padding: 10px 20px;
   color: #fff;
 }
 .nav-main__link:hover {
