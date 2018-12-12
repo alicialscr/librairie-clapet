@@ -94,7 +94,7 @@ button {
   margin: auto;
   padding: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
 }
 
 .text-container {
@@ -198,7 +198,7 @@ button {
 .chapo {
   font-size: 2.5em;
   text-align: center;
-  width: 960px;
+  max-width: 960px;
   margin: 50px auto;
 }
 
@@ -428,7 +428,6 @@ button {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   margin-bottom: 35px;
-  width: 960px;
   margin: auto;
 }
 
@@ -480,20 +479,21 @@ button {
 }
 
 .page-single__header {
+  font-family: 'Montserrat';
   margin-bottom: 75px;
 }
 
 .page-single__title {
   margin: 0;
   font-size: 5.6em;
-  line-height: 1.4;
-  font-weight: 500;
+  line-height: normal;
+  font-weight: 600;
 }
 
 .page-single__subtitle {
   margin: 0;
   font-size: 3.2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 
