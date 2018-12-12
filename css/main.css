@@ -301,12 +301,13 @@ button {
 */
 
 .honey-pot-list {
+  display: flex;
   text-align: center;
 }
 
 .honey-pot {
   display: inline-block;
-  margin: 0 30px 35px 30px;
+  margin: auto;
   text-align: center;
 }
 
