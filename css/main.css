@@ -276,6 +276,7 @@ button {
 .nav-main__list {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .nav-main__link {
@@ -494,6 +495,53 @@ button {
   margin: 0;
   font-size: 3.2em;
   font-weight: 300;
+}
+.page-single__presentation {
+  display: flex;
+}
+
+.page-single__description p {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.page-single__description blockquote {
+  font-size: 2.4em;
+  font-family: 'Montserrat';
+  font-weight: 200;
+  line-height: normal;
+  color: #e8a27d;
+  border-left: 4px solid #d9d9d9;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.page-single__description .author {
+  font-size: 1.6em;
+  text-align: right;
+  line-height: normal;
+}
+
+.page-single img {
+  margin-right: 40px;
+}
+
+.page-single__description .chapo {
+  display: grid;
+  margin: 0 0 30px 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: normal;
+  text-align: inherit;
+}
+
+.page-single__content p {
+  font-size: 2em;
+  line-height: normal;
+  text-align: justify;
+  width: 960px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 
