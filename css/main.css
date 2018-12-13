@@ -383,20 +383,22 @@ button {
 .news__date {
   margin: 0;
   font-size: 1.8em;
+  font-family: 'Montserrat';
   color: #e8a27d;
 }
 
 .news__title {
   margin: 0 0 15px;
+  font-family: 'Montserrat';
   font-weight: bold;
-  font-size: 2em;
-  line-height: 1.4;
+  font-size: 2.4em;
+  line-height: normal;
 }
 
 .news__text {
   margin: 0;
-  font-size: 1.4em;
-  line-height: 1.4;
+  font-size: 2em;
+  line-height: normal;
 }
 
 .page-list .news {
@@ -436,34 +438,14 @@ button {
   grid-column: span 3;
 }
 
-.news-list__news {
-  grid-column: span 1;
-}
-
-/* .news-list {
-  display: grid;
-  grid-gap: 35px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  margin-bottom: 35px;
+.news-list .news-list__news--medium {
+  grid-column: span 2;
 }
 
 .news-list__news {
   grid-column: span 1;
 }
 
-.news-list__news--main {
-  grid-column: 1/4;
-}
-
-.news-list__news--main .news__thumbnail {
-  float: left;
-  margin-right: 30px;
-}
-
-.news-list__news--main .news__content {
-  display: grid;
-} */
 
 /**
 * -----------
@@ -475,10 +457,6 @@ button {
 /**
 * single
 */
-.page-single {
-  text-align: justify;
-}
-
 .page-single__header {
   font-family: 'Montserrat';
   margin-bottom: 75px;
@@ -515,7 +493,9 @@ button {
 /**
 * conseils-de-lecture
 */
-
+.conseils-de-lecture {
+  text-align: justify;
+}
 
 .conseils-de-lecture .page-single__description blockquote {
   font-size: 2.4em;
@@ -554,6 +534,64 @@ button {
   width: 960px;
   margin: auto;
   margin-bottom: 10px;
+}
+
+
+/**
+* notre-actualite
+*/
+
+.news--main {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #b0b0c5;
+}
+.news--main .news__link {
+  display: flex;
+  align-items: flex-start;
+}
+.news--main .news__thumbnail {
+  margin-bottom: 0;
+  margin-right: 40px;
+  min-width: 360px;
+}
+
+
+/**
+* news-list
+*/
+
+.notre-actualite .news--main {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.notre-actualite .news-list {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 35px;
+  margin: auto;
+}
+
+.notre-actualite .news-list__news--main {
+  grid-column: span 4;
+}
+
+.notre-actualite .news-list__news--main .news__thumbnail {
+  min-width: 588px;
+}
+
+.notre-actualite .news-list__news--main .news__title {
+  font-size: 3.4em;
+}
+
+.notre-actualite .news-list__news--main .news__text {
+  font-size: 2.4em;
+}
+
+.notre-actualite .news-list__news--medium {
+  grid-column: span 2;
 }
 
 /**
