@@ -390,7 +390,7 @@ button {
 .news__title {
   margin: 0 0 15px;
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-weight: 600; /*Tried to respect 500 as in zeplin but it's too thin on Chrome Windows device*/
   font-size: 2.4em;
   line-height: normal;
 }
