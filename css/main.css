@@ -332,6 +332,11 @@ button {
   display: inline-block;
   margin-bottom: 20px;
   filter: grayscale(0);
+  transition: all .2s ease-in-out;
+}
+
+.honey-pot__thumbnail:hover {
+  transform: scale(1.1);
 }
 
 .honey-pot__thumbnail:hover {
