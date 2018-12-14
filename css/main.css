@@ -46,8 +46,8 @@ h2 {
 
 h3 {
   margin: 25px 0;
-  font-size: 2.6em;
-  font-weight: 200;
+  font-size: 4.2em;
+  font-weight: 400;
 }
 
 h4 {
@@ -230,6 +230,11 @@ button {
   background-size: cover;
   background-position: center bottom;
   overflow: hidden;
+}
+
+/* Adapts header to single pages */
+.decouvrez-notre-librairie.header, .conseils-de-lecture.header, .notre-actualite.header, .actualite-news.header {
+  height: 286px;
 }
 
 
@@ -474,14 +479,47 @@ button {
   font-size: 3.2em;
   font-weight: 300;
 }
+
 .page-single__presentation {
   display: flex;
 }
 
-.page-single__description p {
+.page-single__presentation .img-at-left {
+  margin-right: 40px;
+}
+
+.page-single__presentation .img-at-right {
+  margin-left: 40px;
+}
+
+.page-single__description .chapo {
+  display: grid;
+  margin: 0 0 30px 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: normal;
+  text-align: inherit;
+}
+
+.page-single__content .page-single__description p {
   font-size: 2em;
   margin-bottom: 40px;
+  width: inherit;
 }
+
+.page-single__content p {
+  font-size: 2em;
+  line-height: normal;
+  text-align: justify;
+  width: 960px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.page-single__content .page-single__description h3 {
+  margin-top: 0
+}
+
 
 /**
 * decouvrez-notre-librairie
@@ -514,28 +552,6 @@ button {
   line-height: normal;
 }
 
-.conseils-de-lecture img {
-  margin-right: 40px;
-}
-
-.conseils-de-lecture .page-single__description .chapo {
-  display: grid;
-  margin: 0 0 30px 0;
-  font-size: 2.5em;
-  font-weight: normal;
-  line-height: normal;
-  text-align: inherit;
-}
-
-.conseils-de-lecture .page-single__content p {
-  font-size: 2em;
-  line-height: normal;
-  text-align: justify;
-  width: 960px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
 
 /**
 * notre-actualite
@@ -553,6 +569,14 @@ button {
   margin-bottom: 0;
   margin-right: 40px;
   min-width: 360px;
+}
+
+/**
+* actualite-news
+*/
+
+.actualite-news .page-single__presentation {
+  margin-bottom: 100px;
 }
 
 
